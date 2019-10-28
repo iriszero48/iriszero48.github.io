@@ -1,7 +1,7 @@
 #!/bin/bash
 
-## version 1.0
-## 2019/10/18
+## version 1.1
+## 2019/10/28
 ## by iriszero
 
 git clone https://github.com/iriszero48/HttpAutoIndexServer.git
