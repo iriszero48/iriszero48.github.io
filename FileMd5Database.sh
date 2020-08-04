@@ -35,3 +35,9 @@ elif [[ "$ID" == "gentoo" ]]; then
 else
     echo unsupport $ID
 fi
+
+if [[ -e FileMd5Database/fmd ]]; then
+    echo "done."
+else
+    echo "failed."
+fi
