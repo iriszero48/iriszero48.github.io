@@ -38,7 +38,7 @@ else
     echo unsupport $ID
 fi
 
-if [[ -f FileMd5Database/fmd ]]; then
+if [[ -f fmd ]]; then
     echo "done."
 else
     echo "failed."
