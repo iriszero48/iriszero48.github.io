@@ -6,6 +6,8 @@ source /etc/os-release
 
 echo $ID $VERSION_ID -j $threads
 
+rm -rf FileMd5Database
+
 if [[ "$ID" == "ubuntu" && $VERSION_ID =~ (16|18) ]]; then
     sudo add-apt-repository ppa:ubuntu-toolchain-r/test
     sudo apt update
@@ -36,7 +38,7 @@ else
     echo unsupport $ID
 fi
 
-if [[ -e FileMd5Database/fmd ]]; then
+if [[ -f FileMd5Database/fmd ]]; then
     echo "done."
 else
     echo "failed."
