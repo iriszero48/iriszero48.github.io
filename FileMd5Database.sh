@@ -26,7 +26,7 @@ elif [[ "$ID" == "debian" || "$ID" == "raspbian" ]]; then
     cd FileMd5Database && cmake FileMd5Database && make -j $threads
 elif [[ "$ID" == "kali" ]]; then
     sudo apt update
-    sudo apt install g++-9 git cmake libboost-serialization-dev libboost-locale-dev libboost-filesystem-dev libboost-system-dev -y
+    sudo apt install g++ git cmake libboost-serialization-dev libboost-locale-dev libboost-filesystem-dev libboost-system-dev -y
     git clone https://github.com/iriszero48/FileMd5Database.git
     cd FileMd5Database && cmake FileMd5Database && make -j $threads
 elif [[ "$ID" == "gentoo" ]]; then
